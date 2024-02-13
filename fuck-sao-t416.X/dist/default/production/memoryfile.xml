@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 <project>                                  
-  <executable name="dist/default/debug/fuck-sao-t416.X.debug.elf">                 
+  <executable name="dist/default/production/fuck-sao-t416.X.production.elf">                 
     <memory name="program">              
       <units>bytes</units>                 
       <length>4096</length>                 
-      <used>506</used>                     
-      <free>3590</free>                     
+      <used>528</used>                     
+      <free>3568</free>                     
     </memory>                              
     <memory name="data">                 
       <units>bytes</units>                 

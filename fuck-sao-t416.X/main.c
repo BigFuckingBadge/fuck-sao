@@ -15,8 +15,10 @@
 #define BUTTON_PIN PIN0_bm
 #define DEBUG_PIN_IN PIN1_bm
 #define DEBUG_PIN_OUT (PIN2_bm | PIN3_bm)
-char index = 0;
 
+uint8_t index = 0;
+uint16_t counter = 0;
+uint8_t button_state = 0;
 
 void init_clk()
 {
@@ -30,10 +32,11 @@ void init_io() {
     PORTA.DIRSET = PORTA_PINS;
     PORTB.DIRSET = PORTB_PINS;
     PORTC.DIRCLR = BUTTON_PIN | DEBUG_PIN_IN;
+    PORTC.PIN0CTRL = PORT_PULLUPEN_bm;
     PORTC.DIRSET = DEBUG_PIN_OUT;
 }
 
-void switch_led(char index) {
+void switch_led(uint8_t index) {
     
     PORTA.OUTCLR = PORTA_PINS;
     PORTB.OUTCLR = PORTB_PINS;    
@@ -84,54 +87,44 @@ void switch_led(char index) {
     }
 }
 
+uint8_t button_activated = 0;
+
 void main(void) {
     
     init_clk();
     
     init_io();
+    index = 0;
+    switch_led(index);
     
-
     while(1) {
-        PORTB.OUTCLR = PIN5_bm;
-        PORTA.OUTSET = PIN1_bm;
-        _delay_ms(500);
-        PORTA.OUTCLR = PIN1_bm;
-        PORTA.OUTSET = PIN2_bm;
-        _delay_ms(500);
-        PORTA.OUTCLR = PIN2_bm;
-        PORTA.OUTSET = PIN3_bm;
-        _delay_ms(500);
-        PORTA.OUTCLR = PIN3_bm;
-        PORTA.OUTSET = PIN4_bm;
-        _delay_ms(500);
-        PORTA.OUTCLR = PIN4_bm;
-        PORTA.OUTSET = PIN5_bm;
-        _delay_ms(500);
-        PORTA.OUTCLR = PIN5_bm;
-        PORTA.OUTSET = PIN6_bm;
-        _delay_ms(500);
-        PORTA.OUTCLR = PIN6_bm;
-        PORTA.OUTSET = PIN7_bm;
-        _delay_ms(500);
-        PORTA.OUTCLR = PIN7_bm;
-        PORTB.OUTSET = PIN0_bm;
-        _delay_ms(500);
-        PORTB.OUTCLR = PIN0_bm;
-        PORTB.OUTSET = PIN1_bm;
-        _delay_ms(500);
-        PORTB.OUTCLR = PIN1_bm;
-        PORTB.OUTSET = PIN2_bm;
-        _delay_ms(500);
-        PORTB.OUTCLR = PIN2_bm;
-        PORTB.OUTSET = PIN3_bm;
-        _delay_ms(500);
-        PORTB.OUTCLR = PIN3_bm;
-        PORTB.OUTSET = PIN4_bm;
-        _delay_ms(500);
-        PORTB.OUTCLR = PIN4_bm;
-        PORTB.OUTSET = PIN5_bm;
-        _delay_ms(500);
-        
-        
+        _delay_ms(1);
+        if (PORTC.IN & PIN0_bm) {
+            
+            if (button_activated) {
+                index++;
+                switch_led(index);
+                if (index > 12) index = 0;               
+            }
+                                 
+            button_activated = 0;
+            counter = 0;
+        }
+        else {
+            
+            if (counter > 1000) { //Long hold                
+                counter--; //Just keep counter from actually counting now
+                _delay_ms(10);
+                index++;
+                switch_led(index);
+                if (index > 12) index = 0;
+            }
+            else if (counter > 50 && !button_activated) {
+                button_activated = 1;
+            } 
+
+            counter++;
+            
+        }        
     }
 }

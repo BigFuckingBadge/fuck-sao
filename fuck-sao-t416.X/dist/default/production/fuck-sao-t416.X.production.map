@@ -3,18 +3,18 @@ Archive member included to satisfy reference by file (symbol)
 c:/program files/microchip/xc8/v2.31/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_exit.o)
                               C:/Users/Branden/.mchp_packs/Microchip/ATtiny_DFP/3.1.260/xc8/avr/lib/avrxmega3/short-calls/crtattiny416.o (exit)
 c:/program files/microchip/xc8/v2.31/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_copy_data.o)
-                              build/default/debug/main.o (__do_clear_bss)
+                              build/default/production/main.o (__do_clear_bss)
 
 Discarded input sections
 
  .data          0x0000000000000000        0x0 C:/Users/Branden/.mchp_packs/Microchip/ATtiny_DFP/3.1.260/xc8/avr/lib/avrxmega3/short-calls/crtattiny416.o
  .bss           0x0000000000000000        0x0 C:/Users/Branden/.mchp_packs/Microchip/ATtiny_DFP/3.1.260/xc8/avr/lib/avrxmega3/short-calls/crtattiny416.o
- .text          0x0000000000000000        0x0 build/default/debug/main.o
- .data          0x0000000000000000        0x0 build/default/debug/main.o
- .bss           0x0000000000000000        0x0 build/default/debug/main.o
+ .text          0x0000000000000000        0x0 build/default/production/main.o
+ .data          0x0000000000000000        0x0 build/default/production/main.o
+ .bss           0x0000000000000000        0x0 build/default/production/main.o
  .bss.button_state
-                0x0000000000000000        0x1 build/default/debug/main.o
- .avr.prop      0x0000000000000000       0x16 build/default/debug/main.o
+                0x0000000000000000        0x1 build/default/production/main.o
+ .avr.prop      0x0000000000000000       0x16 build/default/production/main.o
  .text          0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.31/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_exit.o)
  .data          0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.31/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_exit.o)
  .bss           0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.31/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_exit.o)
@@ -66,12 +66,10 @@ Address of section .data set to 0x803f00
                 0x0000000000008000                __RODATA_PM_OFFSET__ = 0x8000
 LOAD C:/Users/Branden/.mchp_packs/Microchip/ATtiny_DFP/3.1.260/xc8/avr/lib/avrxmega3/short-calls/crtattiny416.o
                 0x0000000000000001                __MPLAB_BUILD = 0x1
-LOAD build/default/debug/main.o
+LOAD build/default/production/main.o
 START GROUP
 LOAD c:/program files/microchip/xc8/v2.31/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libm.a
 END GROUP
-                0x0000000000000001                __MPLAB_DEBUG = 0x1
-                0x0000000000000001                __DEBUG = 0x1
 START GROUP
 LOAD c:/program files/microchip/xc8/v2.31/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a
 LOAD c:/program files/microchip/xc8/v2.31/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libm.a
@@ -187,7 +185,7 @@ END GROUP
  *(.vectors)
  *(.progmem.gcc*)
  .progmem.gcc_sw_table.switch_led
-                0x0000000000000034       0x18 build/default/debug/main.o
+                0x0000000000000034       0x18 build/default/production/main.o
  *(.dinit)
  .dinit         0x000000000000004c        0x5 data_init
                 0x0000000000000052                . = ALIGN (0x2)
@@ -325,7 +323,7 @@ END GROUP
 
 .comment        0x0000000000000000       0x2f
  *(.comment)
- .comment       0x0000000000000000       0x2f build/default/debug/main.o
+ .comment       0x0000000000000000       0x2f build/default/production/main.o
                                          0x30 (size before relaxing)
 
 .note.gnu.build-id
@@ -346,38 +344,38 @@ END GROUP
 .debug_aranges  0x0000000000000000       0x38
  *(.debug_aranges)
  .debug_aranges
-                0x0000000000000000       0x38 build/default/debug/main.o
+                0x0000000000000000       0x38 build/default/production/main.o
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x0000000000000000     0x20f4
+.debug_info     0x0000000000000000     0x21d3
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x0000000000000000     0x19c7 C:/Users/Branden/.mchp_packs/Microchip/ATtiny_DFP/3.1.260/xc8/avr/lib/avrxmega3/short-calls/crtattiny416.o
- .debug_info    0x00000000000019c7      0x72d build/default/debug/main.o
+ .debug_info    0x00000000000019c7      0x80c build/default/production/main.o
 
-.debug_abbrev   0x0000000000000000     0x1990
+.debug_abbrev   0x0000000000000000     0x19f8
  *(.debug_abbrev)
  .debug_abbrev  0x0000000000000000     0x1864 C:/Users/Branden/.mchp_packs/Microchip/ATtiny_DFP/3.1.260/xc8/avr/lib/avrxmega3/short-calls/crtattiny416.o
- .debug_abbrev  0x0000000000001864      0x12c build/default/debug/main.o
+ .debug_abbrev  0x0000000000001864      0x194 build/default/production/main.o
 
-.debug_line     0x0000000000000000      0x3ab
+.debug_line     0x0000000000000000      0x408
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x0000000000000000      0x136 C:/Users/Branden/.mchp_packs/Microchip/ATtiny_DFP/3.1.260/xc8/avr/lib/avrxmega3/short-calls/crtattiny416.o
- .debug_line    0x0000000000000136      0x275 build/default/debug/main.o
+ .debug_line    0x0000000000000136      0x2d2 build/default/production/main.o
 
 .debug_frame    0x0000000000000000       0x54
  *(.debug_frame)
- .debug_frame   0x0000000000000000       0x54 build/default/debug/main.o
+ .debug_frame   0x0000000000000000       0x54 build/default/production/main.o
 
 .debug_str      0x0000000000000000      0xacf
  *(.debug_str)
  .debug_str     0x0000000000000000      0xab9 C:/Users/Branden/.mchp_packs/Microchip/ATtiny_DFP/3.1.260/xc8/avr/lib/avrxmega3/short-calls/crtattiny416.o
- .debug_str     0x0000000000000ab9       0x16 build/default/debug/main.o
+ .debug_str     0x0000000000000ab9       0x16 build/default/production/main.o
 
-.debug_loc      0x0000000000000000      0x163
+.debug_loc      0x0000000000000000      0x1f1
  *(.debug_loc)
- .debug_loc     0x0000000000000000      0x163 build/default/debug/main.o
+ .debug_loc     0x0000000000000000      0x1f1 build/default/production/main.o
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -399,11 +397,11 @@ END GROUP
 
 .debug_ranges   0x0000000000000000       0x28
  *(.debug_ranges)
- .debug_ranges  0x0000000000000000       0x28 build/default/debug/main.o
+ .debug_ranges  0x0000000000000000       0x28 build/default/production/main.o
 
 .debug_macro
  *(.debug_macro)
-OUTPUT(dist/default/debug/fuck-sao-t416.X.debug.elf elf32-avr)
+OUTPUT(dist/default/production/fuck-sao-t416.X.production.elf elf32-avr)
 LOAD linker stubs
 LOAD data_init
 
@@ -415,61 +413,61 @@ LOAD data_init
 .bss.button_activated
                 0x0000000000803f02        0x1
  .bss.button_activated
-                0x0000000000803f02        0x1 build/default/debug/main.o
+                0x0000000000803f02        0x1 build/default/production/main.o
                 0x0000000000803f02                button_activated
 
 .bss.counter    0x0000000000803f00        0x2
- .bss.counter   0x0000000000803f00        0x2 build/default/debug/main.o
+ .bss.counter   0x0000000000803f00        0x2 build/default/production/main.o
                 0x0000000000803f00                counter
 
 .bss.index      0x0000000000803f03        0x1
- .bss.index     0x0000000000803f03        0x1 build/default/debug/main.o
+ .bss.index     0x0000000000803f03        0x1 build/default/production/main.o
                 0x0000000000803f03                index
 
-.text.main      0x00000000000000a2       0x9e
- .text.main     0x00000000000000a2       0x9e build/default/debug/main.o
+.text.main      0x00000000000000a2       0xb4
+ .text.main     0x00000000000000a2       0xb4 build/default/production/main.o
                 0x00000000000000a2                main
 
 .text.switch_led
-                0x0000000000000140       0x8a
+                0x0000000000000156       0x8a
  .text.switch_led
-                0x0000000000000140       0x8a build/default/debug/main.o
-                0x0000000000000140                switch_led
+                0x0000000000000156       0x8a build/default/production/main.o
+                0x0000000000000156                switch_led
 
-.text.init_io   0x00000000000001ca       0x1e
- .text.init_io  0x00000000000001ca       0x1e build/default/debug/main.o
-                0x00000000000001ca                init_io
+.text.init_io   0x00000000000001e0       0x1e
+ .text.init_io  0x00000000000001e0       0x1e build/default/production/main.o
+                0x00000000000001e0                init_io
 
-.text.init_clk  0x00000000000001e8       0x10
+.text.init_clk  0x00000000000001fe       0x10
  .text.init_clk
-                0x00000000000001e8       0x10 build/default/debug/main.o
-                0x00000000000001e8                init_clk
+                0x00000000000001fe       0x10 build/default/production/main.o
+                0x00000000000001fe                init_clk
 
-.text           0x00000000000001f8        0x2
- .text          0x00000000000001f8        0x2 C:/Users/Branden/.mchp_packs/Microchip/ATtiny_DFP/3.1.260/xc8/avr/lib/avrxmega3/short-calls/crtattiny416.o
-                0x00000000000001f8                __vector_22
-                0x00000000000001f8                __vector_1
-                0x00000000000001f8                __vector_24
-                0x00000000000001f8                __vector_12
-                0x00000000000001f8                __bad_interrupt
-                0x00000000000001f8                __vector_6
-                0x00000000000001f8                __vector_3
-                0x00000000000001f8                __vector_23
-                0x00000000000001f8                __vector_25
-                0x00000000000001f8                __vector_11
-                0x00000000000001f8                __vector_13
-                0x00000000000001f8                __vector_17
-                0x00000000000001f8                __vector_19
-                0x00000000000001f8                __vector_7
-                0x00000000000001f8                __vector_5
-                0x00000000000001f8                __vector_4
-                0x00000000000001f8                __vector_9
-                0x00000000000001f8                __vector_2
-                0x00000000000001f8                __vector_21
-                0x00000000000001f8                __vector_15
-                0x00000000000001f8                __vector_8
-                0x00000000000001f8                __vector_14
-                0x00000000000001f8                __vector_10
-                0x00000000000001f8                __vector_16
-                0x00000000000001f8                __vector_18
-                0x00000000000001f8                __vector_20
+.text           0x000000000000020e        0x2
+ .text          0x000000000000020e        0x2 C:/Users/Branden/.mchp_packs/Microchip/ATtiny_DFP/3.1.260/xc8/avr/lib/avrxmega3/short-calls/crtattiny416.o
+                0x000000000000020e                __vector_22
+                0x000000000000020e                __vector_1
+                0x000000000000020e                __vector_24
+                0x000000000000020e                __vector_12
+                0x000000000000020e                __bad_interrupt
+                0x000000000000020e                __vector_6
+                0x000000000000020e                __vector_3
+                0x000000000000020e                __vector_23
+                0x000000000000020e                __vector_25
+                0x000000000000020e                __vector_11
+                0x000000000000020e                __vector_13
+                0x000000000000020e                __vector_17
+                0x000000000000020e                __vector_19
+                0x000000000000020e                __vector_7
+                0x000000000000020e                __vector_5
+                0x000000000000020e                __vector_4
+                0x000000000000020e                __vector_9
+                0x000000000000020e                __vector_2
+                0x000000000000020e                __vector_21
+                0x000000000000020e                __vector_15
+                0x000000000000020e                __vector_8
+                0x000000000000020e                __vector_14
+                0x000000000000020e                __vector_10
+                0x000000000000020e                __vector_16
+                0x000000000000020e                __vector_18
+                0x000000000000020e                __vector_20
