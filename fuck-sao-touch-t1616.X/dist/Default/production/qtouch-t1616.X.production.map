@@ -1,0 +1,918 @@
+Archive member included to satisfy reference by file (symbol)
+
+qtouch/lib/gcc\libqtm_touch_key_t1616_0x0002.a(avr_touch_key_g_t1616.o)
+                              build/Default/production/qtouch/touch.o (qtm_update_qtlib_timer)
+qtouch/lib/gcc\libqtm_acq_runtime_t1616_0x0018.a(avr_acq_g_t1616.o)
+                              build/Default/production/qtouch/touch.o (qtm_acquisition_process)
+c:/program files/microchip/xc8/v2.31/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_exit.o)
+                              C:/Program Files/Microchip/xc8/v2.31/dfp/xc8/avr/lib/avrxmega3/crtattiny1616.o (exit)
+c:/program files/microchip/xc8/v2.31/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_tablejump2.o)
+                              build/Default/production/main.o (__tablejump2__)
+c:/program files/microchip/xc8/v2.31/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_copy_data.o)
+                              build/Default/production/qtouch/touch.o (__do_copy_data)
+
+Allocating common symbols
+Common symbol       size              file
+
+qtlib_key_grp_data_set1
+                    0x6               build/Default/production/qtouch/touch.o
+qtm_acquisition_control_working_set_ptr
+                    0x2               qtouch/lib/gcc\libqtm_acq_runtime_t1616_0x0018.a(avr_acq_g_t1616.o)
+interrupt_cnt       0x1               build/Default/production/qtouch/touch.o
+ptc_qtlib_node_stat1
+                    0x5               build/Default/production/qtouch/touch.o
+touch_acq_signals_raw
+                    0x2               build/Default/production/qtouch/touch.o
+qtlib_key_data_set1
+                    0x6               build/Default/production/qtouch/touch.o
+qtm_raw_data_measurements_ptr
+                    0x2               qtouch/lib/gcc\libqtm_acq_runtime_t1616_0x0018.a(avr_acq_g_t1616.o)
+
+Discarded input sections
+
+ .data          0x0000000000000000        0x0 C:/Program Files/Microchip/xc8/v2.31/dfp/xc8/avr/lib/avrxmega3/crtattiny1616.o
+ .bss           0x0000000000000000        0x0 C:/Program Files/Microchip/xc8/v2.31/dfp/xc8/avr/lib/avrxmega3/crtattiny1616.o
+ .text          0x0000000000000000        0x0 build/Default/production/qtouch/touch.o
+ .data          0x0000000000000000        0x0 build/Default/production/qtouch/touch.o
+ .bss           0x0000000000000000        0x0 build/Default/production/qtouch/touch.o
+ .text.get_sensor_node_signal
+                0x0000000000000000       0x1a build/Default/production/qtouch/touch.o
+ .text.update_sensor_node_signal
+                0x0000000000000000       0x1a build/Default/production/qtouch/touch.o
+ .text.get_sensor_node_reference
+                0x0000000000000000       0x1a build/Default/production/qtouch/touch.o
+ .text.update_sensor_node_reference
+                0x0000000000000000       0x1a build/Default/production/qtouch/touch.o
+ .text.get_sensor_cc_val
+                0x0000000000000000       0x1a build/Default/production/qtouch/touch.o
+ .text.update_sensor_cc_val
+                0x0000000000000000       0x1a build/Default/production/qtouch/touch.o
+ .text.update_sensor_state
+                0x0000000000000000       0x1e build/Default/production/qtouch/touch.o
+ .text.calibrate_node
+                0x0000000000000000       0x32 build/Default/production/qtouch/touch.o
+ .text          0x0000000000000000        0x0 build/Default/production/src/clkctrl.o
+ .data          0x0000000000000000        0x0 build/Default/production/src/clkctrl.o
+ .bss           0x0000000000000000        0x0 build/Default/production/src/clkctrl.o
+ .text          0x0000000000000000        0x0 build/Default/production/src/cpuint.o
+ .data          0x0000000000000000        0x0 build/Default/production/src/cpuint.o
+ .bss           0x0000000000000000        0x0 build/Default/production/src/cpuint.o
+ .text          0x0000000000000000        0x0 build/Default/production/src/protected_io.o
+ .data          0x0000000000000000        0x0 build/Default/production/src/protected_io.o
+ .bss           0x0000000000000000        0x0 build/Default/production/src/protected_io.o
+ .text.protected_write_io
+                0x0000000000000000        0x8 build/Default/production/src/protected_io.o
+ .debug_line    0x0000000000000000       0x52 build/Default/production/src/protected_io.o
+ .debug_info    0x0000000000000000       0x5e build/Default/production/src/protected_io.o
+ .debug_abbrev  0x0000000000000000       0x14 build/Default/production/src/protected_io.o
+ .debug_aranges
+                0x0000000000000000       0x20 build/Default/production/src/protected_io.o
+ .text          0x0000000000000000        0x0 build/Default/production/main.o
+ .data          0x0000000000000000        0x0 build/Default/production/main.o
+ .bss           0x0000000000000000        0x0 build/Default/production/main.o
+ .text          0x0000000000000000        0x0 build/Default/production/driver_isr.o
+ .data          0x0000000000000000        0x0 build/Default/production/driver_isr.o
+ .bss           0x0000000000000000        0x0 build/Default/production/driver_isr.o
+ .text          0x0000000000000000        0x0 build/Default/production/atmel_start.o
+ .data          0x0000000000000000        0x0 build/Default/production/atmel_start.o
+ .bss           0x0000000000000000        0x0 build/Default/production/atmel_start.o
+ .text          0x0000000000000000        0x0 build/Default/production/src/driver_init.o
+ .data          0x0000000000000000        0x0 build/Default/production/src/driver_init.o
+ .bss           0x0000000000000000        0x0 build/Default/production/src/driver_init.o
+ .text.mcu_init
+                0x0000000000000000       0x38 build/Default/production/src/driver_init.o
+ .text          0x0000000000000000        0x0 build/Default/production/src/rtc.o
+ .data          0x0000000000000000        0x0 build/Default/production/src/rtc.o
+ .bss           0x0000000000000000        0x0 build/Default/production/src/rtc.o
+ .text          0x0000000000000000        0x0 qtouch/lib/gcc\libqtm_touch_key_t1616_0x0002.a(avr_touch_key_g_t1616.o)
+ .data          0x0000000000000000        0x0 qtouch/lib/gcc\libqtm_touch_key_t1616_0x0002.a(avr_touch_key_g_t1616.o)
+ .bss           0x0000000000000000        0x0 qtouch/lib/gcc\libqtm_touch_key_t1616_0x0002.a(avr_touch_key_g_t1616.o)
+ .text.qtm_key_suspend
+                0x0000000000000000       0x4e qtouch/lib/gcc\libqtm_touch_key_t1616_0x0002.a(avr_touch_key_g_t1616.o)
+ .text.qtm_key_resume
+                0x0000000000000000       0x4e qtouch/lib/gcc\libqtm_touch_key_t1616_0x0002.a(avr_touch_key_g_t1616.o)
+ .text.qtm_get_touch_keys_module_id
+                0x0000000000000000        0x6 qtouch/lib/gcc\libqtm_touch_key_t1616_0x0002.a(avr_touch_key_g_t1616.o)
+ .text.qtm_get_touch_keys_module_ver
+                0x0000000000000000        0x4 qtouch/lib/gcc\libqtm_touch_key_t1616_0x0002.a(avr_touch_key_g_t1616.o)
+ .text          0x0000000000000000        0x0 qtouch/lib/gcc\libqtm_acq_runtime_t1616_0x0018.a(avr_acq_g_t1616.o)
+ .data          0x0000000000000000        0x0 qtouch/lib/gcc\libqtm_acq_runtime_t1616_0x0018.a(avr_acq_g_t1616.o)
+ .bss           0x0000000000000000        0x0 qtouch/lib/gcc\libqtm_acq_runtime_t1616_0x0018.a(avr_acq_g_t1616.o)
+ .text.qtm_autoscan_sensor_node
+                0x0000000000000000      0x278 qtouch/lib/gcc\libqtm_acq_runtime_t1616_0x0018.a(avr_acq_g_t1616.o)
+ .text.qtm_autoscan_node_cancel
+                0x0000000000000000       0x22 qtouch/lib/gcc\libqtm_acq_runtime_t1616_0x0018.a(avr_acq_g_t1616.o)
+ .text.qtm_t161x_ptc_handler_wcomp
+                0x0000000000000000       0x8c qtouch/lib/gcc\libqtm_acq_runtime_t1616_0x0018.a(avr_acq_g_t1616.o)
+ .text.qtm_ptc_de_init
+                0x0000000000000000        0xe qtouch/lib/gcc\libqtm_acq_runtime_t1616_0x0018.a(avr_acq_g_t1616.o)
+ .text.qtm_t161x_acq_module_get_id
+                0x0000000000000000        0x6 qtouch/lib/gcc\libqtm_acq_runtime_t1616_0x0018.a(avr_acq_g_t1616.o)
+ .text.qtm_t161x_acq_module_get_version
+                0x0000000000000000        0x4 qtouch/lib/gcc\libqtm_acq_runtime_t1616_0x0018.a(avr_acq_g_t1616.o)
+ .bss.ptc_wcomp_happened_pointer
+                0x0000000000000000        0x2 qtouch/lib/gcc\libqtm_acq_runtime_t1616_0x0018.a(avr_acq_g_t1616.o)
+ .text          0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.31/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_exit.o)
+ .data          0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.31/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_exit.o)
+ .bss           0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.31/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.31/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.31/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_exit.o)
+ .text.libgcc   0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.31/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.31/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.31/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.31/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.31/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_exit.o)
+ .text          0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.31/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_tablejump2.o)
+ .data          0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.31/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_tablejump2.o)
+ .bss           0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.31/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_tablejump2.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.31/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_tablejump2.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.31/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_tablejump2.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.31/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_tablejump2.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.31/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_tablejump2.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.31/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_tablejump2.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.31/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_tablejump2.o)
+ .text          0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.31/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_copy_data.o)
+ .data          0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.31/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_copy_data.o)
+ .bss           0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.31/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.31/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.31/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_copy_data.o)
+ .text.libgcc   0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.31/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.31/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.31/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.31/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_copy_data.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.31/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_copy_data.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x0000000000000000 0x0000000000004000 xr
+data             0x0000000000803800 0x0000000000000800 rw !x
+eeprom           0x0000000000810000 0x0000000000000100 rw !x
+fuse             0x0000000000820000 0x000000000000000a rw !x
+lock             0x0000000000830000 0x0000000000000400 rw !x
+signature        0x0000000000840000 0x0000000000000400 rw !x
+user_signatures  0x0000000000850000 0x0000000000000400 rw !x
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x803800
+                0x0000000000008000                __RODATA_PM_OFFSET__ = 0x8000
+LOAD C:/Program Files/Microchip/xc8/v2.31/dfp/xc8/avr/lib/avrxmega3/crtattiny1616.o
+                0x0000000000000001                __MPLAB_BUILD = 0x1
+LOAD build/Default/production/qtouch/touch.o
+LOAD build/Default/production/src/clkctrl.o
+LOAD build/Default/production/src/cpuint.o
+LOAD build/Default/production/src/protected_io.o
+LOAD build/Default/production/main.o
+LOAD build/Default/production/driver_isr.o
+LOAD build/Default/production/atmel_start.o
+LOAD build/Default/production/src/driver_init.o
+LOAD build/Default/production/src/rtc.o
+START GROUP
+LOAD c:/program files/microchip/xc8/v2.31/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a
+LOAD qtouch/lib/gcc\libqtm_touch_key_t1616_0x0002.a
+LOAD qtouch/lib/gcc\libqtm_acq_runtime_t1616_0x0018.a
+END GROUP
+START GROUP
+LOAD c:/program files/microchip/xc8/v2.31/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a
+LOAD c:/program files/microchip/xc8/v2.31/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a
+LOAD c:/program files/microchip/xc8/v2.31/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a
+LOAD C:/Program Files/Microchip/xc8/v2.31/dfp/xc8/avr/lib/avrxmega3\libattiny1616.a
+END GROUP
+                [0x0000000000000000]                __TEXT_REGION_ORIGIN__ = DEFINED (__TEXT_REGION_ORIGIN__)?__TEXT_REGION_ORIGIN__:0x0
+                [0x0000000000803800]                __DATA_REGION_ORIGIN__ = DEFINED (__DATA_REGION_ORIGIN__)?__DATA_REGION_ORIGIN__:0x802000
+                [0x0000000000004000]                __TEXT_REGION_LENGTH__ = DEFINED (__TEXT_REGION_LENGTH__)?__TEXT_REGION_LENGTH__:0x100000
+                [0x0000000000000800]                __DATA_REGION_LENGTH__ = DEFINED (__DATA_REGION_LENGTH__)?__DATA_REGION_LENGTH__:0xffa0
+                [0x0000000000000100]                __EEPROM_REGION_LENGTH__ = DEFINED (__EEPROM_REGION_LENGTH__)?__EEPROM_REGION_LENGTH__:0x10000
+                [0x000000000000000a]                __FUSE_REGION_LENGTH__ = DEFINED (__FUSE_REGION_LENGTH__)?__FUSE_REGION_LENGTH__:0x400
+                0x0000000000000400                __LOCK_REGION_LENGTH__ = DEFINED (__LOCK_REGION_LENGTH__)?__LOCK_REGION_LENGTH__:0x400
+                0x0000000000000400                __SIGNATURE_REGION_LENGTH__ = DEFINED (__SIGNATURE_REGION_LENGTH__)?__SIGNATURE_REGION_LENGTH__:0x400
+                0x0000000000000400                __USER_SIGNATURE_REGION_LENGTH__ = DEFINED (__USER_SIGNATURE_REGION_LENGTH__)?__USER_SIGNATURE_REGION_LENGTH__:0x400
+                0x0000000000008000                __RODATA_PM_OFFSET__ = DEFINED (__RODATA_PM_OFFSET__)?__RODATA_PM_OFFSET__:0x8000
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x0000000000000000      0x106
+ *(.vectors)
+ .vectors       0x0000000000000000       0x7c C:/Program Files/Microchip/xc8/v2.31/dfp/xc8/avr/lib/avrxmega3/crtattiny1616.o
+                0x0000000000000000                __vector_default
+                0x0000000000000000                __vectors
+ *(.vectors)
+ *(.progmem.gcc*)
+ .progmem.gcc_sw_table.switch_led
+                0x000000000000007c       0x18 build/Default/production/main.o
+ *(.dinit)
+ .dinit         0x0000000000000094       0x1d data_init
+                0x00000000000000b2                . = ALIGN (0x2)
+ *fill*         0x00000000000000b1        0x1 
+                0x00000000000000b2                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000000000000b2        0x0 linker stubs
+ *(.trampolines*)
+                0x00000000000000b2                __trampolines_end = .
+ *libprintf_flt.a:*(.progmem.data)
+ *libc.a:*(.progmem.data)
+                0x00000000000000b2                . = ALIGN (0x2)
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000000000000b2                __ctors_start = .
+ *(.ctors)
+                0x00000000000000b2                __ctors_end = .
+                0x00000000000000b2                __dtors_start = .
+ *(.dtors)
+                0x00000000000000b2                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000000000000b2        0x0 C:/Program Files/Microchip/xc8/v2.31/dfp/xc8/avr/lib/avrxmega3/crtattiny1616.o
+                0x00000000000000b2                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000000000000b2        0xc C:/Program Files/Microchip/xc8/v2.31/dfp/xc8/avr/lib/avrxmega3/crtattiny1616.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000000000000be       0x3c c:/program files/microchip/xc8/v2.31/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_copy_data.o)
+                0x00000000000000be                __do_copy_data
+                0x00000000000000ec                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000000000000fa        0x8 C:/Program Files/Microchip/xc8/v2.31/dfp/xc8/avr/lib/avrxmega3/crtattiny1616.o
+ *(.init9)
+                0x0000000000000102                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x0000000000000102        0x0 c:/program files/microchip/xc8/v2.31/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_exit.o)
+                0x0000000000000102                _exit
+                0x0000000000000102                exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x0000000000000102        0x4 c:/program files/microchip/xc8/v2.31/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_exit.o)
+ *(.fini0)
+                0x0000000000000106                _etext = .
+
+.data           0x0000000000803800        0x0 load address 0x0000000000000106
+                [!provide]                        PROVIDE (__data_start, .)
+ *(.gnu.linkonce.d*)
+                0x0000000000803800                . = ALIGN (0x2)
+                0x0000000000803800                _edata = .
+                [!provide]                        PROVIDE (__data_end, .)
+
+.bss            0x0000000000803800       0x18
+                [!provide]                        PROVIDE (__bss_start, .)
+ *(COMMON)
+ COMMON         0x0000000000803800       0x14 build/Default/production/qtouch/touch.o
+                0x0000000000803800                qtlib_key_grp_data_set1
+                0x0000000000803806                interrupt_cnt
+                0x0000000000803807                ptc_qtlib_node_stat1
+                0x000000000080380c                touch_acq_signals_raw
+                0x000000000080380e                qtlib_key_data_set1
+ COMMON         0x0000000000803814        0x4 qtouch/lib/gcc\libqtm_acq_runtime_t1616_0x0018.a(avr_acq_g_t1616.o)
+                0x0000000000803814                qtm_acquisition_control_working_set_ptr
+                0x0000000000803816                qtm_raw_data_measurements_ptr
+                [!provide]                        PROVIDE (__bss_end, .)
+                0x0000000000000106                __data_load_start = LOADADDR (.data)
+                0x0000000000000106                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x0000000000803818        0x0
+                [!provide]                        PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                [!provide]                        PROVIDE (__noinit_end, .)
+                0x0000000000803818                _end = .
+
+.eeprom         0x0000000000810000        0x0
+ *(.eeprom*)
+                0x0000000000810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.user_signatures
+ *(.user_signatures*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x5f
+ *(.comment)
+ .comment       0x0000000000000000       0x2f build/Default/production/qtouch/touch.o
+                                         0x30 (size before relaxing)
+ .comment       0x000000000000002f       0x30 build/Default/production/src/clkctrl.o
+ .comment       0x000000000000002f       0x30 build/Default/production/src/cpuint.o
+ .comment       0x000000000000002f       0x30 build/Default/production/main.o
+ .comment       0x000000000000002f       0x30 build/Default/production/driver_isr.o
+ .comment       0x000000000000002f       0x30 build/Default/production/atmel_start.o
+ .comment       0x000000000000002f       0x30 build/Default/production/src/driver_init.o
+ .comment       0x000000000000002f       0x30 build/Default/production/src/rtc.o
+ .comment       0x000000000000002f       0x30 qtouch/lib/gcc\libqtm_touch_key_t1616_0x0002.a(avr_touch_key_g_t1616.o)
+                                         0x31 (size before relaxing)
+ .comment       0x000000000000005f       0x31 qtouch/lib/gcc\libqtm_acq_runtime_t1616_0x0018.a(avr_acq_g_t1616.o)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000      0x188
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0x90 build/Default/production/qtouch/touch.o
+ .debug_aranges
+                0x0000000000000090       0x20 build/Default/production/src/clkctrl.o
+ .debug_aranges
+                0x00000000000000b0       0x20 build/Default/production/src/cpuint.o
+ .debug_aranges
+                0x00000000000000d0       0x30 build/Default/production/main.o
+ .debug_aranges
+                0x0000000000000100       0x20 build/Default/production/driver_isr.o
+ .debug_aranges
+                0x0000000000000120       0x20 build/Default/production/atmel_start.o
+ .debug_aranges
+                0x0000000000000140       0x28 build/Default/production/src/driver_init.o
+ .debug_aranges
+                0x0000000000000168       0x20 build/Default/production/src/rtc.o
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x0000000000000000     0x584e
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000     0x19ed C:/Program Files/Microchip/xc8/v2.31/dfp/xc8/avr/lib/avrxmega3/crtattiny1616.o
+ .debug_info    0x00000000000019ed     0x1d2f build/Default/production/qtouch/touch.o
+ .debug_info    0x000000000000371c      0x49c build/Default/production/src/clkctrl.o
+ .debug_info    0x0000000000003bb8      0x237 build/Default/production/src/cpuint.o
+ .debug_info    0x0000000000003def      0x5f3 build/Default/production/main.o
+ .debug_info    0x00000000000043e2      0x505 build/Default/production/driver_isr.o
+ .debug_info    0x00000000000048e7      0x423 build/Default/production/atmel_start.o
+ .debug_info    0x0000000000004d0a      0x4a4 build/Default/production/src/driver_init.o
+ .debug_info    0x00000000000051ae      0x6a0 build/Default/production/src/rtc.o
+
+.debug_abbrev   0x0000000000000000     0x2175
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000     0x1888 C:/Program Files/Microchip/xc8/v2.31/dfp/xc8/avr/lib/avrxmega3/crtattiny1616.o
+ .debug_abbrev  0x0000000000001888      0x31e build/Default/production/qtouch/touch.o
+ .debug_abbrev  0x0000000000001ba6       0xa4 build/Default/production/src/clkctrl.o
+ .debug_abbrev  0x0000000000001c4a       0x46 build/Default/production/src/cpuint.o
+ .debug_abbrev  0x0000000000001c90      0x1a6 build/Default/production/main.o
+ .debug_abbrev  0x0000000000001e36       0xe0 build/Default/production/driver_isr.o
+ .debug_abbrev  0x0000000000001f16       0xa9 build/Default/production/atmel_start.o
+ .debug_abbrev  0x0000000000001fbf       0xdb build/Default/production/src/driver_init.o
+ .debug_abbrev  0x000000000000209a       0xdb build/Default/production/src/rtc.o
+
+.debug_line     0x0000000000000000      0xc3a
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x0000000000000000      0x151 C:/Program Files/Microchip/xc8/v2.31/dfp/xc8/avr/lib/avrxmega3/crtattiny1616.o
+ .debug_line    0x0000000000000151      0x335 build/Default/production/qtouch/touch.o
+ .debug_line    0x0000000000000486       0xb4 build/Default/production/src/clkctrl.o
+ .debug_line    0x000000000000053a       0x87 build/Default/production/src/cpuint.o
+ .debug_line    0x00000000000005c1      0x2d3 build/Default/production/main.o
+ .debug_line    0x0000000000000894       0xcf build/Default/production/driver_isr.o
+ .debug_line    0x0000000000000963       0xe5 build/Default/production/atmel_start.o
+ .debug_line    0x0000000000000a48      0x13c build/Default/production/src/driver_init.o
+ .debug_line    0x0000000000000b84       0xb6 build/Default/production/src/rtc.o
+
+.debug_frame    0x0000000000000000      0x2cc
+ *(.debug_frame)
+ .debug_frame   0x0000000000000000      0x158 build/Default/production/qtouch/touch.o
+ .debug_frame   0x0000000000000158       0x24 build/Default/production/src/clkctrl.o
+ .debug_frame   0x000000000000017c       0x24 build/Default/production/src/cpuint.o
+ .debug_frame   0x00000000000001a0       0x44 build/Default/production/main.o
+ .debug_frame   0x00000000000001e4       0x6c build/Default/production/driver_isr.o
+ .debug_frame   0x0000000000000250       0x24 build/Default/production/atmel_start.o
+ .debug_frame   0x0000000000000274       0x34 build/Default/production/src/driver_init.o
+ .debug_frame   0x00000000000002a8       0x24 build/Default/production/src/rtc.o
+
+.debug_str      0x0000000000000000      0xc98
+ *(.debug_str)
+ .debug_str     0x0000000000000000      0xacf C:/Program Files/Microchip/xc8/v2.31/dfp/xc8/avr/lib/avrxmega3/crtattiny1616.o
+ .debug_str     0x0000000000000acf      0x14a build/Default/production/qtouch/touch.o
+ .debug_str     0x0000000000000c19        0x0 build/Default/production/src/clkctrl.o
+ .debug_str     0x0000000000000c19        0x0 build/Default/production/src/cpuint.o
+ .debug_str     0x0000000000000c19       0x22 build/Default/production/main.o
+ .debug_str     0x0000000000000c3b       0x22 build/Default/production/driver_isr.o
+ .debug_str     0x0000000000000c5d       0x17 build/Default/production/atmel_start.o
+ .debug_str     0x0000000000000c74       0x24 build/Default/production/src/driver_init.o
+ .debug_str     0x0000000000000c98        0x0 build/Default/production/src/rtc.o
+
+.debug_loc      0x0000000000000000      0x4cb
+ *(.debug_loc)
+ .debug_loc     0x0000000000000000      0x24e build/Default/production/qtouch/touch.o
+ .debug_loc     0x000000000000024e      0x247 build/Default/production/main.o
+ .debug_loc     0x0000000000000495       0x36 build/Default/production/src/driver_init.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x0000000000000000      0x120
+ *(.debug_ranges)
+ .debug_ranges  0x0000000000000000       0x80 build/Default/production/qtouch/touch.o
+ .debug_ranges  0x0000000000000080       0x10 build/Default/production/src/clkctrl.o
+ .debug_ranges  0x0000000000000090       0x10 build/Default/production/src/cpuint.o
+ .debug_ranges  0x00000000000000a0       0x38 build/Default/production/main.o
+ .debug_ranges  0x00000000000000d8       0x10 build/Default/production/driver_isr.o
+ .debug_ranges  0x00000000000000e8       0x10 build/Default/production/atmel_start.o
+ .debug_ranges  0x00000000000000f8       0x18 build/Default/production/src/driver_init.o
+ .debug_ranges  0x0000000000000110       0x10 build/Default/production/src/rtc.o
+
+.debug_macro
+ *(.debug_macro)
+OUTPUT(dist/Default/production/qtouch-t1616.X.production.elf elf32-avr)
+LOAD linker stubs
+LOAD data_init
+
+.note.gnu.avr.deviceinfo
+                0x0000000000000000       0x40
+ .note.gnu.avr.deviceinfo
+                0x0000000000000000       0x40 C:/Program Files/Microchip/xc8/v2.31/dfp/xc8/avr/lib/avrxmega3/crtattiny1616.o
+
+.bss.module_error_code
+                0x0000000000803848        0x1
+ .bss.module_error_code
+                0x0000000000803848        0x1 build/Default/production/qtouch/touch.o
+                0x0000000000803848                module_error_code
+
+.bss.measurement_done_touch
+                0x0000000000803849        0x1
+ .bss.measurement_done_touch
+                0x0000000000803849        0x1 build/Default/production/qtouch/touch.o
+                0x0000000000803849                measurement_done_touch
+
+.bss.touch_postprocess_request
+                0x000000000080384a        0x1
+ .bss.touch_postprocess_request
+                0x000000000080384a        0x1 build/Default/production/qtouch/touch.o
+                0x000000000080384a                touch_postprocess_request
+
+.bss.time_to_measure_touch_flag
+                0x000000000080384b        0x1
+ .bss.time_to_measure_touch_flag
+                0x000000000080384b        0x1 build/Default/production/qtouch/touch.o
+                0x000000000080384b                time_to_measure_touch_flag
+
+.bss.button_activated
+                0x000000000080384c        0x1
+ .bss.button_activated
+                0x000000000080384c        0x1 build/Default/production/main.o
+                0x000000000080384c                button_activated
+
+.bss.counter    0x0000000000803840        0x2
+ .bss.counter   0x0000000000803840        0x2 build/Default/production/main.o
+                0x0000000000803840                counter
+
+.bss.idx        0x000000000080384d        0x1
+ .bss.idx       0x000000000080384d        0x1 build/Default/production/main.o
+                0x000000000080384d                idx
+
+.bss.qtm_local_ms_timecount
+                0x0000000000803842        0x2
+ .bss.qtm_local_ms_timecount
+                0x0000000000803842        0x2 qtouch/lib/gcc\libqtm_touch_key_t1616_0x0002.a(avr_touch_key_g_t1616.o)
+                0x0000000000803842                qtm_local_ms_timecount
+
+.bss.ptc_seq_measure_complete_pointer
+                0x0000000000803844        0x2
+ .bss.ptc_seq_measure_complete_pointer
+                0x0000000000803844        0x2 qtouch/lib/gcc\libqtm_acq_runtime_t1616_0x0018.a(avr_acq_g_t1616.o)
+
+.bss.touch_seq_lib_state
+                0x000000000080384f        0x1
+ .bss.touch_seq_lib_state
+                0x000000000080384f        0x1 qtouch/lib/gcc\libqtm_acq_runtime_t1616_0x0018.a(avr_acq_g_t1616.o)
+
+.bss.current_measure_channel
+                0x0000000000803846        0x2
+ .bss.current_measure_channel
+                0x0000000000803846        0x2 qtouch/lib/gcc\libqtm_acq_runtime_t1616_0x0018.a(avr_acq_g_t1616.o)
+
+.text.qtm_key_sensors_process
+                0x0000000000000106      0x74e
+ .text.qtm_key_sensors_process
+                0x0000000000000106      0x74e qtouch/lib/gcc\libqtm_touch_key_t1616_0x0002.a(avr_touch_key_g_t1616.o)
+                0x0000000000000106                qtm_key_sensors_process
+
+.text.qtm_acquisition_process
+                0x0000000000000854      0x2fc
+ .text.qtm_acquisition_process
+                0x0000000000000854      0x2fc qtouch/lib/gcc\libqtm_acq_runtime_t1616_0x0018.a(avr_acq_g_t1616.o)
+                0x0000000000000854                qtm_acquisition_process
+
+.text.qtm_measure_node
+                0x0000000000000b50      0x11a
+ .text.qtm_measure_node
+                0x0000000000000b50      0x11a qtouch/lib/gcc\libqtm_acq_runtime_t1616_0x0018.a(avr_acq_g_t1616.o)
+
+.text.main      0x0000000000000c6a       0xe4
+ .text.main     0x0000000000000c6a       0xe4 build/Default/production/main.o
+                0x0000000000000c6a                main
+
+.text.check_for_aks_block
+                0x0000000000000d4e       0xd2
+ .text.check_for_aks_block
+                0x0000000000000d4e       0xd2 qtouch/lib/gcc\libqtm_touch_key_t1616_0x0002.a(avr_touch_key_g_t1616.o)
+
+.text.qtm_ptc_start_measurement_seq
+                0x0000000000000e20       0xd0
+ .text.qtm_ptc_start_measurement_seq
+                0x0000000000000e20       0xd0 qtouch/lib/gcc\libqtm_acq_runtime_t1616_0x0018.a(avr_acq_g_t1616.o)
+                0x0000000000000e20                qtm_ptc_start_measurement_seq
+
+.text.switch_led
+                0x0000000000000ef0       0x92
+ .text.switch_led
+                0x0000000000000ef0       0x92 build/Default/production/main.o
+                0x0000000000000ef0                switch_led
+
+.text.qtm_ptc_init_acquisition_module
+                0x0000000000000f82       0x8c
+ .text.qtm_ptc_init_acquisition_module
+                0x0000000000000f82       0x8c qtouch/lib/gcc\libqtm_acq_runtime_t1616_0x0018.a(avr_acq_g_t1616.o)
+                0x0000000000000f82                qtm_ptc_init_acquisition_module
+
+.text.qtm_calibrate_sensor_node
+                0x000000000000100e       0x82
+ .text.qtm_calibrate_sensor_node
+                0x000000000000100e       0x82 qtouch/lib/gcc\libqtm_acq_runtime_t1616_0x0018.a(avr_acq_g_t1616.o)
+                0x000000000000100e                qtm_calibrate_sensor_node
+
+.text.touch_process
+                0x0000000000001090       0x68
+ .text.touch_process
+                0x0000000000001090       0x68 build/Default/production/qtouch/touch.o
+                0x0000000000001090                touch_process
+
+.text.select_next_channel_to_measure
+                0x00000000000010f8       0x66
+ .text.select_next_channel_to_measure
+                0x00000000000010f8       0x66 qtouch/lib/gcc\libqtm_acq_runtime_t1616_0x0018.a(avr_acq_g_t1616.o)
+
+.text.qtm_t161x_ptc_handler_eoc
+                0x000000000000115e       0x58
+ .text.qtm_t161x_ptc_handler_eoc
+                0x000000000000115e       0x58 qtouch/lib/gcc\libqtm_acq_runtime_t1616_0x0018.a(avr_acq_g_t1616.o)
+                0x000000000000115e                qtm_t161x_ptc_handler_eoc
+
+.text.__vector_6
+                0x00000000000011b6       0x52
+ .text.__vector_6
+                0x00000000000011b6       0x52 build/Default/production/driver_isr.o
+                0x00000000000011b6                __vector_6
+
+.text.touch_init
+                0x0000000000001208       0x50
+ .text.touch_init
+                0x0000000000001208       0x50 build/Default/production/qtouch/touch.o
+                0x0000000000001208                touch_init
+
+.text.__vector_20
+                0x0000000000001258       0x48
+ .text.__vector_20
+                0x0000000000001258       0x48 build/Default/production/qtouch/touch.o
+                0x0000000000001258                __vector_20
+
+.text.qtm_init_sensor_key
+                0x00000000000012a0       0x3e
+ .text.qtm_init_sensor_key
+                0x00000000000012a0       0x3e qtouch/lib/gcc\libqtm_touch_key_t1616_0x0002.a(avr_touch_key_g_t1616.o)
+                0x00000000000012a0                qtm_init_sensor_key
+
+.text.qtm_enable_sensor_node
+                0x00000000000012de       0x3e
+ .text.qtm_enable_sensor_node
+                0x00000000000012de       0x3e qtouch/lib/gcc\libqtm_acq_runtime_t1616_0x0018.a(avr_acq_g_t1616.o)
+                0x00000000000012de                qtm_enable_sensor_node
+
+.text.touch_timer_handler
+                0x000000000000131c       0x24
+ .text.touch_timer_handler
+                0x000000000000131c       0x24 build/Default/production/qtouch/touch.o
+                0x000000000000131c                touch_timer_handler
+
+.text.get_sensor_state
+                0x0000000000001340       0x1e
+ .text.get_sensor_state
+                0x0000000000001340       0x1e build/Default/production/qtouch/touch.o
+                0x0000000000001340                get_sensor_state
+
+.text.init_io   0x000000000000135e       0x1e
+ .text.init_io  0x000000000000135e       0x1e build/Default/production/main.o
+                0x000000000000135e                init_io
+
+.text.Timer_init
+                0x000000000000137c       0x1a
+ .text.Timer_init
+                0x000000000000137c       0x1a build/Default/production/src/rtc.o
+                0x000000000000137c                Timer_init
+
+.text.Timer_set_period
+                0x0000000000001396       0x16
+ .text.Timer_set_period
+                0x0000000000001396       0x16 build/Default/production/qtouch/touch.o
+                0x0000000000001396                Timer_set_period
+
+.text.qtm_update_qtlib_timer
+                0x00000000000013ac       0x16
+ .text.qtm_update_qtlib_timer
+                0x00000000000013ac       0x16 qtouch/lib/gcc\libqtm_touch_key_t1616_0x0002.a(avr_touch_key_g_t1616.o)
+                0x00000000000013ac                qtm_update_qtlib_timer
+
+.text.qtm_ptc_qtlib_assign_signal_memory
+                0x00000000000013c2       0x14
+ .text.qtm_ptc_qtlib_assign_signal_memory
+                0x00000000000013c2       0x14 qtouch/lib/gcc\libqtm_acq_runtime_t1616_0x0018.a(avr_acq_g_t1616.o)
+                0x00000000000013c2                qtm_ptc_qtlib_assign_signal_memory
+
+.text.CLKCTRL_init
+                0x00000000000013d6       0x12
+ .text.CLKCTRL_init
+                0x00000000000013d6       0x12 build/Default/production/src/clkctrl.o
+                0x00000000000013d6                CLKCTRL_init
+
+.text.atmel_start_init
+                0x00000000000013e8       0x10
+ .text.atmel_start_init
+                0x00000000000013e8       0x10 build/Default/production/atmel_start.o
+                0x00000000000013e8                atmel_start_init
+
+.text.system_init
+                0x00000000000013f8        0xe
+ .text.system_init
+                0x00000000000013f8        0xe build/Default/production/src/driver_init.o
+                0x00000000000013f8                system_init
+
+.text.libgcc    0x0000000000001406        0xc
+ .text.libgcc   0x0000000000001406        0xc c:/program files/microchip/xc8/v2.31/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_tablejump2.o)
+                0x0000000000001406                __tablejump2__
+
+.text.qtm_measure_complete_callback
+                0x0000000000001412        0x8
+ .text.qtm_measure_complete_callback
+                0x0000000000001412        0x8 build/Default/production/qtouch/touch.o
+
+.text.CPUINT_init
+                0x000000000000141a        0x6
+ .text.CPUINT_init
+                0x000000000000141a        0x6 build/Default/production/src/cpuint.o
+                0x000000000000141a                CPUINT_init
+
+.rodata.gain_setting_int_cap
+                0x0000000000809420        0x6 load address 0x0000000000001420
+ .rodata.gain_setting_int_cap
+                0x0000000000809420        0x6 qtouch/lib/gcc\libqtm_acq_runtime_t1616_0x0018.a(avr_acq_g_t1616.o)
+
+.text           0x0000000000001426        0x4
+ .text          0x0000000000001426        0x4 C:/Program Files/Microchip/xc8/v2.31/dfp/xc8/avr/lib/avrxmega3/crtattiny1616.o
+                0x0000000000001426                __vector_22
+                0x0000000000001426                __vector_28
+                0x0000000000001426                __vector_1
+                0x0000000000001426                __vector_24
+                0x0000000000001426                __vector_12
+                0x0000000000001426                __bad_interrupt
+                0x0000000000001426                __vector_3
+                0x0000000000001426                __vector_23
+                0x0000000000001426                __vector_30
+                0x0000000000001426                __vector_25
+                0x0000000000001426                __vector_11
+                0x0000000000001426                __vector_13
+                0x0000000000001426                __vector_17
+                0x0000000000001426                __vector_19
+                0x0000000000001426                __vector_7
+                0x0000000000001426                __vector_27
+                0x0000000000001426                __vector_5
+                0x0000000000001426                __vector_4
+                0x0000000000001426                __vector_9
+                0x0000000000001426                __vector_2
+                0x0000000000001426                __vector_21
+                0x0000000000001426                __vector_15
+                0x0000000000001426                __vector_29
+                0x0000000000001426                __vector_8
+                0x0000000000001426                __vector_26
+                0x0000000000001426                __vector_14
+                0x0000000000001426                __vector_10
+                0x0000000000001426                __vector_16
+                0x0000000000001426                __vector_18
+
+.data.qtlib_key_grp_config_set1
+                0x0000000000803818        0xa load address 0x000000000000142a
+ .data.qtlib_key_grp_config_set1
+                0x0000000000803818        0xa build/Default/production/qtouch/touch.o
+                0x0000000000803818                qtlib_key_grp_config_set1
+
+.data.qtlib_key_set1
+                0x0000000000803822        0x8 load address 0x0000000000001434
+ .data.qtlib_key_set1
+                0x0000000000803822        0x8 build/Default/production/qtouch/touch.o
+                0x0000000000803822                qtlib_key_set1
+
+.data.ptc_seq_node_cfg1
+                0x000000000080382a        0x8 load address 0x000000000000143c
+ .data.ptc_seq_node_cfg1
+                0x000000000080382a        0x8 build/Default/production/qtouch/touch.o
+                0x000000000080382a                ptc_seq_node_cfg1
+
+.data.qtlib_acq_set1
+                0x0000000000803832        0x6 load address 0x0000000000001444
+ .data.qtlib_acq_set1
+                0x0000000000803832        0x6 build/Default/production/qtouch/touch.o
+                0x0000000000803832                qtlib_acq_set1
+
+.data.ptc_qtlib_acq_gen1
+                0x0000000000803838        0x5 load address 0x000000000000144a
+ .data.ptc_qtlib_acq_gen1
+                0x0000000000803838        0x5 build/Default/production/qtouch/touch.o
+                0x0000000000803838                ptc_qtlib_acq_gen1
+
+.data.qtlib_key_configs_set1
+                0x000000000080383d        0x3 load address 0x000000000000144f
+ .data.qtlib_key_configs_set1
+                0x000000000080383d        0x3 build/Default/production/qtouch/touch.o
+                0x000000000080383d                qtlib_key_configs_set1
+
+.data.qtm_which_mode_current
+                0x000000000080384e        0x1 load address 0x0000000000001452
+ .data.qtm_which_mode_current
+                0x000000000080384e        0x1 qtouch/lib/gcc\libqtm_acq_runtime_t1616_0x0018.a(avr_acq_g_t1616.o)
+                0x000000000080384e                qtm_which_mode_current

@@ -1,4 +1,4 @@
-21690424969379283
+21692136901903154
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -90277,6 +90277,13 @@ dome-switches
 
 0
 5
+2
+ws2812b-1010
+LED_0603_1608Metric_large_ss
+LED SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
+LED
+0
+2
 2
 ws2812b-1010
 ws2812b-1010

@@ -1,0 +1,383 @@
+format_version: '2'
+name: My Project
+versions:
+  api: '1.0'
+  backend: 1.9.698
+  commit: ''
+  content: unknown
+  content_pack_name: unknown
+  format: '2'
+  frontend: 1.9.698
+  packs_version_avr8: 1.0.1463
+  packs_version_qtouch: unknown
+  packs_version_sam: 1.0.1726
+  version_backend: 1.9.698
+  version_frontend: ''
+board:
+  identifier: CustomBoard
+  device: ATtiny1616-MFR
+details: null
+application: null
+middlewares:
+  QTOUCH_LIBRARY_0:
+    user_label: QTOUCH_LIBRARY_0
+    configuration: {}
+    definition: Atmel:QTOUCH_TINY_AVR:1.0.0::QTouch_Standard_Library
+    functionality: QTouch_Library
+    api: QTouch:General:Core
+    dependencies: {}
+  QTOUCH_TIMER:
+    user_label: QTOUCH_TIMER
+    configuration: {}
+    definition: Atmel:QTOUCH_TINY_AVR:1.0.0::QTouch_Timer
+    functionality: QTouch_Timer
+    api: QTouch:Driver:Timer
+    dependencies:
+      Timer: Timer
+  QTOUCH_NODE:
+    user_label: QTOUCH_NODE
+    configuration:
+      order: 0
+      ptc_analog_gain: '1'
+      ptc_csd: 0
+      ptc_digital_gain: '1'
+      ptc_filter_level: '16'
+      ptc_prescaler: Divide by 64
+      ptc_rsel: No Resistor
+    definition: Atmel:QTOUCH_TINY_AVR:1.0.0::QTouch_selfcap_node
+    functionality: QTouch_Node
+    api: QTouch:General:Node
+    dependencies:
+      QTouch Acquisition: QTOUCH_ACQUISITION
+      Y-line: PTC:Y/5
+      PTC: PTC
+  QTOUCH_SENSOR:
+    user_label: QTOUCH_SENSOR
+    configuration:
+      anti_tch_drift_rate: 5
+      anti_tch_recal_thrshld: 100 percent of Touch threshold
+      anti_touch_count: 5
+      drift_hold_time: 20
+      max_on_duration: 0
+      reburst_mode: Reburst sensors only in process of calibration / filter in / filter
+        out and AKS groups
+      tch_drift_rate: 20
+      touch_det_int: 4
+    definition: Atmel:QTOUCH_TINY_AVR:1.0.0::QTouch_Sensor
+    functionality: QTouch_Sensor
+    api: QTouch:General:Sensor
+    dependencies: {}
+  QTOUCH_BUTTON:
+    user_label: QTOUCH_BUTTON
+    configuration:
+      order: 0
+      radius: 30
+      touch_sensor_aks: No AKS setting
+      touch_sensor_hysterisis: 25 percent of Sensor Threshold
+      touch_sensor_threshold: 20
+      x_position: 50
+      y_position: 50
+    definition: Atmel:QTOUCH_TINY_AVR:1.0.0::QTouch_Key
+    functionality: QTouch_Key
+    api: QTouch:General:Key
+    dependencies:
+      QTouch Sensor: QTOUCH_SENSOR
+      QTouch Node: QTOUCH_NODE
+  QTOUCH_BINDING:
+    user_label: QTOUCH_BINDING
+    configuration: {}
+    definition: Atmel:QTOUCH_TINY_AVR:1.0.0::QTouch_Binding
+    functionality: QTouch_Binding
+    api: QTouch:General:Binding
+    dependencies: {}
+  QTOUCH_REMOVE_BINDING_0:
+    user_label: QTOUCH_REMOVE_BINDING_0
+    configuration: {}
+    definition: Atmel:QTOUCH_TINY_AVR:1.0.0::QTouch_Remove_Binding
+    functionality: QTouch_Remove_Binding
+    api: QTouch:General:RemoveBinding
+    dependencies: {}
+  QTOUCH_DATASTREAMER_0:
+    user_label: QTOUCH_DATASTREAMER_0
+    configuration:
+      debug_board_type: USER_BOARD
+    definition: Atmel:QTOUCH_TINY_AVR:1.0.0::Data_Streamer_UART_Interface
+    functionality: QTouch_DataStreamer
+    api: QTouch:General:Datastreamer
+    dependencies:
+      QTouch Usart: QTOUCH_USART
+  QTOUCH_USART:
+    user_label: QTOUCH_USART
+    configuration: {}
+    definition: Atmel:QTOUCH_TINY_AVR:1.0.0::QTouch_Usart
+    functionality: QTouch_Usart
+    api: QTouch:Driver:USART
+    dependencies:
+      USART: USART
+  QTOUCH_ACQUISITION:
+    user_label: QTOUCH_ACQUISITION
+    configuration:
+      acquisition_frequency: FREQ_SEL_0
+      ptc_acq_tune: Manual user setting of Prescaler, Charge share delay & Series
+        resistor
+      ptc_measurement_time: 20
+      ptc_sensor_type: Selfcap
+    definition: Atmel:QTOUCH_TINY_AVR:1.0.0::QTouch_Acquisition_-_Manual_Tuning
+    functionality: QTouch_Acquisition
+    api: QTouch:General:Acquisition
+    dependencies:
+      QTouch Timer: QTOUCH_TIMER
+      QTouch Binding: QTOUCH_BINDING
+drivers:
+  CLKCTRL:
+    user_label: CLKCTRL
+    definition: Atmel:ATtiny417_81x_161x_321x_drivers:1.0.0::ATtiny1616-MFR::CLKCTRL::driver_config_definition::CLKCTRL::Drivers:CLKCTRL:Init
+    functionality: System
+    api: Drivers:CLKCTRL:Init
+    configuration:
+      $input: 20000000
+      $input_id: 20MHz Internal Oscillator (OSC20M)
+      RESERVED_InputFreq: 20000000
+      RESERVED_InputFreq_id: 20MHz Internal Oscillator (OSC20M)
+      _$freq_output_32KHz divided by 32: 1024
+      _$freq_output_External Clock (EXTCLK): '32768'
+      _$freq_output_Main Clock (CLK_MAIN): 20000000
+      _$freq_output_TCD0 Clock (CLK_TCD0): 20000000
+      clkctrl_mclkctrla_cksel: 20MHz Internal Oscillator (OSC20M)
+      clkctrl_mclkctrla_clkout: false
+      clkctrl_mclkctrlb_pdiv: '2'
+      clkctrl_mclkctrlb_pen: false
+      clkctrl_mclklock_locken: false
+      clkctrl_osc16mctrla_runstdby: false
+      clkctrl_osc20mctrla_runstdby: false
+      clkctrl_osc32kctrla_runstdby: false
+      clkctrl_xosc32kctrla_csut: 1k cycles
+      clkctrl_xosc32kctrla_runstdby: false
+      clkctrl_xosc32kctrla_sel: false
+      cpu_clock_source: Main Clock (CLK_MAIN)
+      enable_clk_per: false
+      enable_extclk: false
+      enable_main: true
+      enable_osc16m: false
+      enable_osc20m: true
+      enable_osculp1k: true
+      enable_osculp1k_enable: true
+      enable_osculp32k: false
+      enable_tcd0: false
+      enable_xosc32kctrla: false
+      extosc: 32768
+      nvm_clock_source: Main Clock (CLK_MAIN)
+      osculp1k_clksel_clksel: 32KHz Internal Ultra Low Power Oscillator (OSCULP32K)
+      ram_clock_source: Main Clock (CLK_MAIN)
+      tcd0_ctrla_clksel: 20MHz Internal Oscillator (OSC20M)
+      tcd0_ctrla_syncpres: '1'
+      xosc32kctrla_arch_enable: false
+    optional_signals: []
+    variant: null
+    clocks:
+      domain_group:
+        nodes:
+        - name: CPU
+          input: CPU
+          external: false
+          external_frequency: 0
+        configuration: {}
+  Timer:
+    user_label: Timer
+    definition: Atmel:ATtiny417_81x_161x_321x_drivers:1.0.0::ATtiny1616-MFR::RTC::driver_config_definition::RTC::Drivers:RTC:Init
+    functionality: RTC
+    api: Drivers:RTC:Init
+    configuration:
+      $input: 0
+      $input_id: 32KHz Internal Ultra Low Power Oscillator (OSCULP32K)
+      RESERVED_InputFreq: 0
+      RESERVED_InputFreq_id: 32KHz Internal Ultra Low Power Oscillator (OSCULP32K)
+      _$freq_output_RTC Clock (CLK_RTC): 32768
+      enable_rtc: true
+      inc_isr_harness: true
+      rtc_clksel_clksel: 32KHz Internal Ultra Low Power Oscillator (OSCULP32K)
+      rtc_cmp: 0
+      rtc_cnt: 0
+      rtc_ctrla_prescaler: '1'
+      rtc_ctrla_rtcen: true
+      rtc_ctrla_runstdby: true
+      rtc_dbgctrl_dbgrun: false
+      rtc_intctrl_cmp: true
+      rtc_intctrl_ovf: false
+      rtc_per: 65535
+      rtc_pitctrla_period: 'Off'
+      rtc_pitctrla_piten: false
+      rtc_pitdbgctrl_dbgrun: false
+      rtc_pitintctrl_pi: false
+    optional_signals: []
+    variant: null
+    clocks:
+      domain_group:
+        nodes:
+        - name: RTC
+          input: RTC Clock (CLK_RTC)
+          external: false
+          external_frequency: 0
+        configuration:
+          rtc_clock_source: RTC Clock (CLK_RTC)
+  PTC:
+    user_label: PTC
+    definition: Atmel:ATtiny417_81x_161x_321x_drivers:1.0.0::ATtiny1616-MFR::PTC::driver_config_definition::PTC::Drivers:PTC:Init
+    functionality: PTC
+    api: Drivers:PTC:Init
+    configuration: {}
+    optional_signals:
+    - identifier: PTC:Y/5
+      pad: PB0
+      mode: Enabled
+      configuration: null
+      definition: Atmel:ATtiny417_81x_161x_321x_drivers:1.0.0::ATtiny1616-MFR::optional_signal_definition::PTC.Y.5
+      name: PTC/Y/5
+      label: Y/5
+    variant: null
+    clocks:
+      domain_group: null
+  USART:
+    user_label: USART
+    definition: Atmel:ATtiny417_81x_161x_321x_drivers:1.0.0::ATtiny1616-MFR::USART0::driver_config_definition::Async.Polled.Mode::Drivers:USART:Basic
+    functionality: USART
+    api: Drivers:USART:Basic
+    configuration:
+      baud_rate: 38400
+      ctrla_abeie: false
+      ctrla_dreie: false
+      ctrla_lbme: false
+      ctrla_rs485: RS485 Mode disabled
+      ctrla_rxcie: false
+      ctrla_rxsie: false
+      ctrla_txcie: false
+      ctrlb_mpcm: false
+      ctrlb_odme: false
+      ctrlb_rxen: true
+      ctrlb_rxmode: Normal mode
+      ctrlb_sfden: false
+      ctrlb_txen: true
+      ctrlc_chsize: 'Character size: 8 bit'
+      ctrlc_cmode: Asynchronous USART
+      ctrlc_pmode: No Parity
+      ctrlc_sbmode: 1 stop bit
+      ctrlc_ucpha: false
+      ctrlc_udord: false
+      dbgctrl_abmbp: false
+      dbgctrl_dbgrun: false
+      evctrl_irei: false
+      printf_support: false
+      rxplctrl_rxpl: 0
+      txplctrl_txpl: 0
+    optional_signals: []
+    variant:
+      specification: CMODE=0
+      required_signals:
+      - name: USART0/RXD
+        pad: PB3
+        label: RXD
+      - name: USART0/TXD
+        pad: PB2
+        label: TXD
+    clocks:
+      domain_group:
+        nodes:
+        - name: USART
+          input: Main Clock (CLK_MAIN)
+          external: false
+          external_frequency: 0
+        configuration:
+          usart_clock_source: Main Clock (CLK_MAIN)
+  CPUINT:
+    user_label: CPUINT
+    definition: Atmel:ATtiny417_81x_161x_321x_drivers:1.0.0::ATtiny1616-MFR::CPUINT::driver_config_definition::CPUINT::Drivers:CPUINT:Init
+    functionality: System
+    api: Drivers:CPUINT:Init
+    configuration:
+      cpuint_ctrla_cvt: false
+      cpuint_ctrla_ivsel: false
+      cpuint_ctrla_lvl0rr: false
+      cpuint_global_interrupt: true
+      cpuint_lvl0pri_lvl0pri: 0
+      cpuint_lvl1vec_lvl1vec: 0
+      inc_isr_harness: false
+    optional_signals: []
+    variant: null
+    clocks:
+      domain_group: null
+  SLPCTRL:
+    user_label: SLPCTRL
+    definition: Atmel:ATtiny417_81x_161x_321x_drivers:1.0.0::ATtiny1616-MFR::SLPCTRL::driver_config_definition::SLPCTRL::Drivers:SLPCTRL:Init
+    functionality: System
+    api: Drivers:SLPCTRL:Init
+    configuration:
+      slpctrl_ctrla_sen: false
+      slpctrl_ctrla_smode: Idle mode
+    optional_signals: []
+    variant: null
+    clocks:
+      domain_group: null
+  BOD:
+    user_label: BOD
+    definition: Atmel:ATtiny417_81x_161x_321x_drivers:1.0.0::ATtiny1616-MFR::BOD::driver_config_definition::BOD::Drivers:BOD:Init
+    functionality: System
+    api: Drivers:BOD:Init
+    configuration:
+      bod_ctrla_sleep: Disabled
+      bod_intctrl_vlmcfg: Interrupt when supply goes below VLM level
+      bod_intctrl_vlmie: false
+      bod_vlmctrla_vlmlvl: VLM threshold 5% above BOD level
+      inc_isr_harness: false
+    optional_signals: []
+    variant: null
+    clocks:
+      domain_group:
+        nodes:
+        - name: BOD
+          input: 32KHz divided by 32
+          external: false
+          external_frequency: 0
+        configuration:
+          bod_clock_source: 32KHz divided by 32
+pads:
+  PB3:
+    name: PB3
+    definition: Atmel:ATtiny417_81x_161x_321x_drivers:1.0.0::ATtiny1616-MFR::pad::PB3
+    mode: Digital input
+    user_label: PB3
+    configuration: null
+  PB2:
+    name: PB2
+    definition: Atmel:ATtiny417_81x_161x_321x_drivers:1.0.0::ATtiny1616-MFR::pad::PB2
+    mode: Digital output
+    user_label: PB2
+    configuration: null
+  PB0:
+    name: PB0
+    definition: Atmel:ATtiny417_81x_161x_321x_drivers:1.0.0::ATtiny1616-MFR::pad::PB0
+    mode: Analog
+    user_label: PB0
+    configuration: null
+toolchain_options:
+- definition:
+    identifier: Atmel:ATtiny417_81x_161x_321x_drivers:1.0.0::ATtiny1616-MFR::environment_definition::All:Microchip.Studio.xc8:7.0.0
+  configuration:
+    compiler_config:
+      xc8_compiler_miscellaneous_OtherFlags: -std=gnu99
+    linker_config:
+      xc8_linker_miscellaneous_LinkerFlags: ''
+- definition:
+    identifier: Atmel:ATtiny417_81x_161x_321x_drivers:1.0.0::ATtiny1616-MFR::environment_definition::All:Microchip.Studio.gcc:7.0.0
+  configuration:
+    compiler_config:
+      avrgcc_compiler_miscellaneous_OtherFlags: -std=gnu99
+    linker_config:
+      avrgcc_linker_miscellaneous_LinkerFlags: ''
+- definition:
+    identifier: Atmel:ATtiny417_81x_161x_321x_drivers:1.0.0::ATtiny1616-MFR::environment_definition::All:Atmel.Studio:7.0.0
+  configuration:
+    compiler_config:
+      avrgcc_compiler_miscellaneous_OtherFlags: -std=gnu99
+    linker_config:
+      avrgcc_linker_miscellaneous_LinkerFlags: ''
+static_files: []

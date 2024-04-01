@@ -106,7 +106,8 @@ void main(void) {
     switch_led(index);
     
     
-    while(1) {
+    while(1) 
+    {
         //Gotta slow down this loop in the laziest way possible
         _delay_ms(1);
         
